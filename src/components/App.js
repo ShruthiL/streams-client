@@ -3,15 +3,21 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import StreamList from './streams/StreamList';
 import StreamShow from './streams/StreamShow';
+import Header from "./Header"
 
 const App = props => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={StreamList} />
-        <Route path="/show" component={StreamShow} />
-      </Switch>
-    </BrowserRouter>
+    <div className="ui container">
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={StreamList} />
+            <Route path="/show" component={StreamShow} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </div>
   )
 }
 
