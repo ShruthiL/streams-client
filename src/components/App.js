@@ -1,12 +1,16 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import StreamList from './streams/StreamList';
+import StreamShow from './streams/StreamShow';
 
 const App = props => {
   return (
     <BrowserRouter>
-      <Route path="/" component={StreamList} />
+      <Switch>
+        <Route exact path="/" component={StreamList} />
+        <Route path="/show" component={StreamShow} />
+      </Switch>
     </BrowserRouter>
   )
 }
