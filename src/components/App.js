@@ -5,6 +5,7 @@ import StreamList from './streams/StreamList';
 import StreamShow from './streams/StreamShow';
 import StreamCreate from './streams/StreamCreate';
 import StreamEdit from './streams/StreamEdit';
+import StreamDelete from './streams/StreamDelete';
 import Header from "./Header"
 
 const App = props => {
@@ -18,6 +19,7 @@ const App = props => {
             <Route path="/show" component={StreamShow} />
             <Route path="/new" component={StreamCreate} />
             <Route path="/edit" component={StreamEdit} />
+            <Route path="/delete" component={StreamDelete} />
           </Switch>
         </div>
       </BrowserRouter>
