@@ -3,7 +3,7 @@ import React from 'react';
 const StreamCreate = props => {
   return (
     <div>
-      Stream List
+      Stream Create
     </div>
   )
 }
